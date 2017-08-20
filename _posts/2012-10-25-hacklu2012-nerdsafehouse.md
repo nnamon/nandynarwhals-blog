@@ -2,7 +2,7 @@
 title: "Hack.lu CTF 2012 - Nerd Safehouse"
 author: Nikolas
 tags:
-  - hackyou2012
+  - hacklu2012
   - writeup
   - web
 ---

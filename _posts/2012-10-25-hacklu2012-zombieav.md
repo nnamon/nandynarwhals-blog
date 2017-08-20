@@ -1,7 +1,7 @@
 ---
 title: "Hack.lu CTF 2012 - Zombie AV"
 tags:
-  - hackyou2012
+  - hacklu2012
   - writeup
   - web
 ---
