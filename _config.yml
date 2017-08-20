@@ -79,7 +79,7 @@ analytics:
 author:
   name             : "amon (j. heng)"
   avatar           : /assets/images/site-logo.png # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "The Potatosploiter."
+  bio              : "The Potatosploiter. Pirate of the Seven Proxseas."
   location         : "Singapore"
   email            : "amon@nandynarwhals.org"
   uri              : "https://nandynarwhals.org"
@@ -90,9 +90,9 @@ author:
   facebook         :
   foursquare       :
   github           : "nnamon"
-  gitlab           :
+  gitlab           : "nnamon"
   google_plus      :
-  keybase          :
+  keybase          : "amon"
   instagram        :
   lastfm           :
   linkedin         :
@@ -101,11 +101,11 @@ author:
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
   steam            :
   tumblr           :
-  twitter          :
+  twitter          : "nn_amon"
   vine             :
   weibo            :
   xing             :
-  youtube          : # "https://youtube.com/c/MichaelRoseDesign"
+  youtube          : "https://www.youtube.com/channel/UCXzhZjmCDAi8lTYoHc50GtA" # "https://youtube.com/c/MichaelRoseDesign"
 
 
 # Reading Files
@@ -173,7 +173,7 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
+paginate: 7 # amount of posts to show
 paginate_path: /page:num/
 timezone: Asia/Singapore # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 

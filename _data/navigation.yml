@@ -4,7 +4,9 @@ main:
     url: /about/
   - title: "CTF Writeups"
     url: /writeups/
-  - title: "Scripting for CTFs"
-    url: /scripting-for-ctfs/
+  - title: "Tutorials"
+    url: /tutorials/
+  - title: "Vulnerability Research"
+    url: /vulnreserach/
   # - title: "Sitemap"
   #   url: /sitemap/
