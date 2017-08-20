@@ -7,13 +7,13 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "Nandy Narwhals"
+title                    : "Nandy Narwhals CTF Team"
 title_separator          : "-"
 name                     : "amon"
-description              : "An information security research and CTF blog."
+description              : "An information security research and CTF blog for the Nandy Narwhals and Dystopian Narwhals CTF Teams."
 url                      : "https://blog.nandynarwhals.org" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "nnamon/nandynarwhals-blog" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -60,7 +60,7 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 : # Open Graph/Twitter default site image
+og_image                 : "/assets/images/site-logo.png" # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -77,8 +77,8 @@ analytics:
 
 # Site Author
 author:
-  name             : "amon"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  name             : "amon (j. heng)"
+  avatar           : /assets/images/site-logo.png # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "The Potatosploiter."
   location         : "Singapore"
   email            : "amon@nandynarwhals.org"
@@ -175,7 +175,7 @@ sass:
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Singapore # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins
