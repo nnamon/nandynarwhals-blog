@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "Nandy Narwhals CTF Team"
+title                    : "Nandy Narwhals CTF Team ▌"
 title_separator          : "-"
 name                     : "amon"
 description              : "An information security research and CTF blog for the Nandy Narwhals and Dystopian Narwhals CTF Teams."
@@ -18,9 +18,9 @@ teaser                   : # path of fallback teaser image, e.g. "/assets/images
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
+  provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
-    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : "narwhals" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -242,6 +242,6 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments: true # true
       share: true
       related: true
