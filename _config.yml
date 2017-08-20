@@ -7,10 +7,10 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "Site Title"
+title                    : "Nandy Narwhals"
 title_separator          : "-"
-name                     : "Your Name"
-description              : "An amazing website."
+name                     : "amon"
+description              : "An information security research and CTF blog."
 url                      : "https://blog.nandynarwhals.org" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -55,7 +55,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               :
+  username               : "nn_amon"
 facebook:
   username               :
   app_id                 :
@@ -77,19 +77,19 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "amon"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
-  email            :
-  uri              :
+  bio              : "The Potatosploiter."
+  location         : "Singapore"
+  email            : "amon@nandynarwhals.org"
+  uri              : "https://nandynarwhals.org"
   bitbucket        :
   codepen          :
   dribbble         :
   flickr           :
   facebook         :
   foursquare       :
-  github           :
+  github           : "nnamon"
   gitlab           :
   google_plus      :
   keybase          :
