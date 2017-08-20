@@ -7,7 +7,7 @@ tags:
   - first post
 ---
 
-Back in May 2014, the first post by Hiromi was "NANDNANDNANDNAND".
+Back in May 2012, the first post by Hiromi was "NANDNANDNANDNAND".
 
 I thought I would give it a little more class with this re-release of the Nandy
 Narwhals blog now serving both the Nandy Narwhals and Dystopian Narwhals CTF
