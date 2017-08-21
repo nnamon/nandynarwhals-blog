@@ -13,8 +13,7 @@ author_profile: true
 {% include base_path %}
 {% include group-by-array collection=site.posts field="tags" %}
 
-<h1>Scripting for CTFs</h1>
-<hr>
+<h3 class="archive__subtitle">Scripting for CTFs</h3>
 
 {% for tag in group_names %}
   {% if tag == "scriptingforctfs" %}
@@ -25,4 +24,3 @@ author_profile: true
   {% endif %}
 {% endfor %}
 
-<hr>

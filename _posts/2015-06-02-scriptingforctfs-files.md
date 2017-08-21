@@ -2,7 +2,7 @@
 title: "Scripting for CTFs - Basic File Operations"
 header:
   overlay_image: /assets/images/combatscripting/dan-carlson-141263.jpg
-  overlay_filter: 0.7
+  overlay_filter: 0.5
   caption: "Photo credit: dan carlson on Unsplash"
 excerpt: "Reading, writing, and some in-between."
 tags:
