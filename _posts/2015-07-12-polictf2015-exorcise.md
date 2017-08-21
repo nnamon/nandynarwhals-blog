@@ -6,6 +6,8 @@ tags:
   - crypto
 ---
 
+Simple challenge involving XORing.
+
 ## Challenge Description
 
 #### Points
