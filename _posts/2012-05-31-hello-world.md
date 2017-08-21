@@ -4,7 +4,7 @@ header:
   image: /assets/images/1-hello-world/eddie-kopp-263580.jpg
   caption: "Photo credit: Eddie Kopp on Unsplash"
 tags:
-  - first post
+  - website
 ---
 
 Back in May 2012, the first post by Hiromi was "NANDNANDNANDNAND".

@@ -62,7 +62,7 @@ for width in brute:
 Guess a few widths, and rearrange the pixels by the guesstimated widths.
 
 ![The assembled image]({{ site.url }}{{ site.baseurl }}/assets/images/tkbctf4/qrcode.png){: .align-center}
-The assembled image
+*The assembled image*
 {: .text-center}
 
 I tried scanning it with the QR Code scanner from my phone but it didn't work...
