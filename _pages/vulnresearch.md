@@ -1,26 +1,25 @@
 ---
 layout: archive
-permalink: /tutorials/
-title: "Tutorials"
+permalink: /vulnresearch/
+title: "Vulnerability Research"
 header:
-  overlay_image: /assets/images/samuel-zeller-136371.jpg
-  overlay_filter: 0.7
-  caption: "Photo credit: Samuel Zeller on Unsplash"
-excerpt: "Tutorials written by the Nandy Narwhals team."
+  overlay_image: /assets/images/vulnresearch-splash.jpg
+  overlay_filter: 0.5
+  caption: "Photo credit: Teresa Kluge on Unsplash"
+excerpt: "Some of the vulnerability research findings I have discovered."
 author_profile: true
 ---
+
+Under construction.
 
 {% include base_path %}
 {% include group-by-array collection=site.posts field="tags" %}
 
-<h3 class="archive__subtitle">Scripting for CTFs</h3>
-
 {% for tag in group_names %}
-  {% if tag == "scriptingforctfs" %}
+  {% if tag == "vulnresearch" %}
     {% assign posts = group_items[forloop.index0] %}
     {% for post in posts %}
       {% include archive-single.html %}
     {% endfor %}
   {% endif %}
 {% endfor %}
-
