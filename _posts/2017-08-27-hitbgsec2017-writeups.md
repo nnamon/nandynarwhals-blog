@@ -25,3 +25,4 @@ challenges in the days to come.
 Here are the writeups we have published so far:
 
 1. [arrdeepee (Misc)]({% post_url 2017-08-27-hitbgsec2017-arrdeepee %})
+2. [flying\_high (Misc)]({% post_url 2017-08-27-hitbgsec2017-flyinghigh %})
