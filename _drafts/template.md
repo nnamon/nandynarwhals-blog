@@ -1,10 +1,34 @@
 ---
-title: "Template Post"
+title: "Template CTF - Template Post (Misc)"
 header:
-  image: /assets/images/1-hello-world/eddie-kopp-263580.jpg
-  caption: "Photo credit: Eddie Kopp on Unsplash"
+  overlay_image: /assets/images/32c3/teufel/header.png
+  overlay_filter: 0.5
 tags:
   - template
+  - writeup
+  - misc
 ---
 
-This is a template.
+Template tl;dr.
+
+## Challenge Description
+
+#### Points
+
+200
+
+#### Author
+
+amon
+
+#### Description
+
+```
+This is a template
+```
+
+## Solution
+
+![1]({{ site.url }}{{ site.baseurl }}/assets/images/32c3/teufel/1.png){: .align-center}
+
+Flag: **32C3\_mov\_pop\_ret\_repeat**
