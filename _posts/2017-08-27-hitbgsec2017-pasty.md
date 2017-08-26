@@ -18,7 +18,7 @@ key of the attacker's choosing.
 
 #### Points
 
-512
+425
 
 #### Description
 
