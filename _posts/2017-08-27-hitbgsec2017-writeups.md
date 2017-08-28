@@ -29,3 +29,5 @@ Here are the writeups we have published so far:
 2. [Pasty (Web)]({% post_url 2017-08-27-hitbgsec2017-pasty %})
 3. [Dating in Singapore (Misc)](https://dystopia.sg/hitb-gsec-2017-2017-dating-in-singapore-misc/)
 4. [Simple Transfer (Misc)](https://dystopia.sg/hitb-gsec-2017-simple-transfer-misc/)
+5. [Prime (Mobile)](https://dystopia.sg/hitb-gsec-2017-prime/)
+
