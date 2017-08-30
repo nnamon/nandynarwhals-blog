@@ -31,6 +31,8 @@ http://47.74.147.52:20012
 
 ## Solution
 
+Solved by [Quan Yang](https://quanyang.github.io/).
+
 First, we visit the website and we see that it is basically a pastebin. There is
 authentication on the pastes if you turn on private mode.
 
