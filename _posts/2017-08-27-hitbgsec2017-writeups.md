@@ -30,4 +30,4 @@ Here are the writeups we have published so far:
 3. [Dating in Singapore (Misc)](https://dystopia.sg/hitb-gsec-2017-2017-dating-in-singapore-misc/)
 4. [Simple Transfer (Misc)](https://dystopia.sg/hitb-gsec-2017-simple-transfer-misc/)
 5. [Prime (Mobile)](https://dystopia.sg/hitb-gsec-2017-prime/)
-
+6. [1000levels (Pwn)](https://nandynarwhals.org/hitbgsec2017-1000levels/)
