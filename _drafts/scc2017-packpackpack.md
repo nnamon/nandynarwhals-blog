@@ -3,7 +3,7 @@ title: "Singapore Cyber Conquest 2017 - Pack! Pack! Pack! (Misc)"
 header:
   overlay_image: /assets/images/scc2017/packpackpack/header.jpg
   overlay_filter: 0.5
-  caption: "Photo credit: "Forrest Cavale on Unsplash"
+  caption: "Photo credit: Forrest Cavale on Unsplash"
 tags:
   - scc2017
   - writeup
