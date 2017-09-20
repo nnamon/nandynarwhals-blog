@@ -10,8 +10,6 @@ excerpt: "Some of the vulnerability research findings I have discovered."
 author_profile: true
 ---
 
-Under construction.
-
 {% include base_path %}
 {% include group-by-array collection=site.posts field="tags" %}
 
