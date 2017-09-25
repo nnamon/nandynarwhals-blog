@@ -1,5 +1,5 @@
 ---
-title: "Bugs that Address Sanitizer Doesn't Detect"
+title: "Bugs that Address Sanitizer Does Not Detect"
 header:
   overlay_image: /assets/images/asan/nodetect/header.jpg
   overlay_filter: 0.5
