@@ -1,7 +1,7 @@
 ---
 title: "Template CTF - Template Post (Misc)"
 header:
-  overlay_image: /assets/images/32c3/teufel/header.png
+  overlay_image: /assets/images/asan/nodetect/header.jpg
   overlay_filter: 0.5
   caption: "Photo credit: Blah Blah on Unsplash"
 tags:
