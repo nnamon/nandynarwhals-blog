@@ -32,4 +32,4 @@ This is a template
 
 ![1]({{ site.url }}{{ site.baseurl }}/assets/images/32c3/teufel/1.png){: .align-center}
 
-Flag: **32C3\_mov\_pop\_ret\_repeat**
+Flag: **flag{this\_is\_a\_flag}**
