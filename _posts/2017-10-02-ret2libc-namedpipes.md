@@ -155,8 +155,8 @@ bit operating system.
 
 ## Stack Diagrams
 
-Before calling the vulnerable function `bof`, the caller `main` pushes the `FILE
-* badfile` argument onto the stack. Next, when the `bof` function is called
+Before calling the vulnerable function `bof`, the caller `main` pushes the
+`FILE * badfile` argument onto the stack. Next, when the `bof` function is called
 into, the return address is pushed onto the stack.
 
 ```shell
