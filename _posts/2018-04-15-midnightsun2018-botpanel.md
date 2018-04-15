@@ -4,18 +4,22 @@ header:
   overlay_image: /assets/images/midnightsun2018/botpanel/header.jpg
   overlay_filter: 0.5
   caption: "Photo credit: Redd Angelo on Unsplash"
+
 tags:
   - midnightsun2018
   - writeup
   - web
 ---
 
-Multiple vulnerabilties in a 32 bit ELF binary allows an attacker to obtain
-remote code execution on a remote system. A format string vulnerability could
-be leveraged to leak sensitive information such as a password, libc addresses,
-stack canaries, and enable full access to the fearures. A second vulnerability
-leveraging shared variables between two threads allows the attacker to
-manipulate the amount of data read and execute a standard buffer overflow.
+Multiple vulnerabilties involving formats strings and unsafe threaded access to
+shared variables in a 32 bit ELF binary allows an attacker to obtain remote code
+execution on a remote system.
+
+A format string vulnerability could be leveraged to leak sensitive information
+such as a password, libc addresses, stack canaries, and enable full access to
+the features. A second vulnerability leveraging shared variables between two
+threads allows the attacker to manipulate the amount of data read and execute a
+standard buffer overflow.
 
 ## Challenge Description
 
