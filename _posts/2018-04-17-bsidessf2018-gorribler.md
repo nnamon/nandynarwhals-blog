@@ -11,6 +11,9 @@ tags:
   - pwn
 ---
 
+Execute arbitrary shellcode by writing to the buffer by calculating values that
+provide the right values when simulating a projectile's trajectory.
+
 ## Challenge Description
 
 ```
@@ -21,11 +24,9 @@ nc -v goribbler-7ced25.challenges.bsidessf.net 1338
 
 #### Points
 
-Points: 200
+Points: 666
 
-Solves: 3
-
-Author: avlidienbrunn
+Solves: 7
 
 ## Solution
 
