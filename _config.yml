@@ -179,7 +179,7 @@ timezone: Asia/Singapore # http://en.wikipedia.org/wiki/List_of_tz_database_time
 
 
 # Plugins
-gems:
+plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
