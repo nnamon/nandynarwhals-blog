@@ -3,7 +3,7 @@ title: "BSides SF CTF 2018 - Rotaluklak (Pwn)"
 header:
   overlay_image: /assets/images/bsidessf2018/rotaluklak/header.jpg
   overlay_filter: 0.5
-  caption: "Photo credit: Jordan McDonald on Unsplash"
+  caption: "Photo credit: Katsiaryna Endruszkiewicz on Unsplash"
 
 tags:
   - bsidessf2018
