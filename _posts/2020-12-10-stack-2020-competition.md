@@ -1,5 +1,5 @@
 ---
-title: "STACK 2020 - Third Place"
+title: "STACK 2020 - Third Place and Writeups"
 header:
   overlay_image: /assets/images/stack-2020/header.jpg
   overlay_filter: 0.5
