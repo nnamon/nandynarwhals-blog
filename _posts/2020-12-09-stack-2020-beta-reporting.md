@@ -14,7 +14,7 @@ tags:
 
 Summary: A format string attack allows us to overwrite an entry in the GOT to redirect execution to a print flag function.
 
-![Challenge description]({{ site.url }}{{ site.baseurl }}/assets/images/stack-2020/2E5CC7547F365251F6E538136FED5E9E.jpg/45BF71893F2FAEC58FC6BD02469194FC.jpg){: .align-center}
+![Challenge description]({{ site.url }}{{ site.baseurl }}/assets/images/stack-2020/45BF71893F2FAEC58FC6BD02469194FC.jpg){: .align-center}
 
 ```
 Beta reporting system

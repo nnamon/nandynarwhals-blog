@@ -15,7 +15,7 @@ tags:
 
 Summary: An I2C trace of a probed 16x2 LCD screen is provided in which credentials containing a usernames, passwords, and a SecurID key can be extracted.
 
-![Challenge description]({{ site.url }}{{ site.baseurl }}/assets/images/stack-2020/4FDEDA8E865982D5DD3A75106A7A12EF.jpg =642x815)
+![Challenge description]({{ site.url }}{{ site.baseurl }}/assets/images/stack-2020/4FDEDA8E865982D5DD3A75106A7A12EF.jpg)
 
 ```
 IOT RSA Token
