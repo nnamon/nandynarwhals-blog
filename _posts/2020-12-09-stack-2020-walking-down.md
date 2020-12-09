@@ -98,7 +98,7 @@ $  docker run --rm -v `pwd`:/data blacktop/volatility --plugins=volatility-plugi
 
 The URL [http://www.mediafire.com/view/5wo9db2pa7gdcoc/] looked extremely suspicious. Downloading the file hosted at the link gives us an extremely tiny PNG:
 
-![Tiny PNG](resources/0E112A3176BA7CA1F975F10E4EAEA28F.jpg =535x56)
+![Tiny PNG]({{ site.url }}{{ site.baseurl }}/assets/images/stack-2020/0E112A3176BA7CA1F975F10E4EAEA28F.jpg){: .align-center}
 
 Examining the file shows that it is a valid PNG but contains very little data:
 
