@@ -1,0 +1,50 @@
+---
+title: "STACK 2020 - Emmel (Misc)"
+header:
+  overlay_image: /assets/images/stack-2020/header.jpg
+  overlay_filter: 0.5
+  caption: "Photo credit: Steve Johnson"
+
+tags:
+  - stack
+  - writeup
+  - misc
+  - machine learning
+---
+
+![Emmel Challenge Description]({{ site.url }}{{ site.baseurl }}/assets/images/stack-2020/2E5CC7547F365251F6E538136FED5E9E.jpg){: .align-center}
+
+```
+Emmel
+1360 MISCELLANEOUS
+88 SOLVES
+
+DESCRIPTION
+Investigators have found a curious login page on a server belonging to COViD. Can you get past the login screen?
+
+Login Page (http://yhi8bpzolrog3yw17fe0wlwrnwllnhic.alttablabs.sg:40751/)
+```
+
+Visiting the login page shows us a file prompt for a JPG image and the question 'What is my favorite thing?'.
+
+![Login Prompt]({{ site.url }}{{ site.baseurl }}/assets/images/stack-2020/C991E857B2AD3AB816577EE2FDA56F3F.jpg){:. align-center}
+
+Attempting this random image of a dickbutt that I had lying around on my hard drive gives us a message but does not log us in.
+
+![dickbutt.jpg]({{ site.url }}{{ site.baseurl }}/assets/images/stack-2020/1CB9AFA3E201F3C0CAE6C3E5AEEFEEA3.jpg){:. align-center}
+
+However, the message appears promising: 'Error, you must get 50% or higher! Similarity: 30.75%'. This implies that we are dealing with an image classifier and we have to submit an image that passes the threshold for identification.
+
+![Not similar enough to log in]({{ site.url }}{{ site.baseurl }}/assets/images/stack-2020/52A5DC48C091E3C5887D4D461180A73E.jpg =764x352){:. align-center}
+
+Since the similarity value is pretty decent for the initial random image, another dickbutt image is attempted:
+
+![dickbutt3.jpg]({{ site.url }}{{ site.baseurl }}/assets/images/stack-2020/C5118FBDD2EFB46026BA4A870DD07012.jpg =742x800){:. align-center}
+
+This time, the image is similar enough and logs us in, granting us the flag:
+
+![Dickbutt accepted]({{ site.url }}{{ site.baseurl }}/assets/images/stack-2020/46B7ACE681BD36C1F48C09685B42E66F.jpg){: .align-center}
+
+It appears that the expected image was supposed to be of a dog, but the threshold was set too low to actually recognise it. Anyway, we got our flag and can move on.
+
+**Flag:** `govtech-csg{I_L0V3_G00D_D0GG0S!}`
