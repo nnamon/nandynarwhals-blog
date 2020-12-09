@@ -8,7 +8,7 @@ header:
 tags:
   - stack
   - writeup
-  - misc
+  - forensics
   - registry
 ---
 

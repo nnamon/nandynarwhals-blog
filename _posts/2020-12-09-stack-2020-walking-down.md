@@ -8,8 +8,9 @@ header:
 tags:
   - stack
   - writeup
-  - misc
-  - machine learning
+  - forensics
+  - steganography
+  - memory dump
 ---
 
 Summary: Analysing the provided memory dump yields a hosted PNG file containing a steganographic message.
