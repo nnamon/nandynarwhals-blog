@@ -14,7 +14,7 @@ tags:
 
 Summary: Malformed IEEE 802.11 RSN tags within select beacon frames are used as a means of encoding hidden data.
 
-![Challenge description]({{ site.url }}{{ site.baseurl }}/assets/images/stack-2020/resources/97EF0AC2CBFF2C85583D9379873FFDDB.jpg){: .align-center}
+![Challenge description]({{ site.url }}{{ site.baseurl }}/assets/images/stack-2020/97EF0AC2CBFF2C85583D9379873FFDDB.jpg){: .align-center}
 
 ```
 The suspicious frequency monitoring alert!
@@ -37,11 +37,11 @@ iot-challenge-2.pcap: pcap capture file, microsecond ts (little-endian) - versio
 
 The PCAP file contains IEEE 802.11 wireless packets.
 
-![Wireless packets]({{ site.url }}{{ site.baseurl }}/assets/images/stack-2020/resources/4C5FC0F9AD0AC65F147CABB7CEAB923E.jpg){: .align-center}
+![Wireless packets]({{ site.url }}{{ site.baseurl }}/assets/images/stack-2020/4C5FC0F9AD0AC65F147CABB7CEAB923E.jpg){: .align-center}
 
 Checking the protocol hierarchy confirms that only wireless packets are contained within the capture.
 
-![Protocol hierarchy]({{ site.url }}{{ site.baseurl }}/assets/images/stack-2020/resources/B4F966507FFD104B47E0E1747C4B378B.jpg){: .align-center}
+![Protocol hierarchy]({{ site.url }}{{ site.baseurl }}/assets/images/stack-2020/B4F966507FFD104B47E0E1747C4B378B.jpg){: .align-center}
 
 Running aircrack on the PCAP file turns up two access points that require no encryption.
 
