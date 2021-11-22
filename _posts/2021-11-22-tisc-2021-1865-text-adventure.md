@@ -2718,3 +2718,9 @@ $
 The full exploit can be found in [`4_a_mad_tea_party.py`](https://github.com/nnamon/tisc-2021-1865-text-adventure/blob/main/solutions/4_a_mad_tea_party.py).
 
 Flag: `TISC{W3_y4wN_A_Mor3_r0m4N_w4y}`
+
+## Other Writeup
+
+Also, checkout these awesome writeups by the participants of TISC 2021:
+
+* https://ctf.zeyu2001.com/2021/the-infosecurity-challenge-tisc-2021
