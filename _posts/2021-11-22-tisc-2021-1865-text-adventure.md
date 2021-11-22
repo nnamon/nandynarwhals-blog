@@ -2719,7 +2719,7 @@ The full exploit can be found in [`4_a_mad_tea_party.py`](https://github.com/nna
 
 Flag: `TISC{W3_y4wN_A_Mor3_r0m4N_w4y}`
 
-## Other Writeup
+## Other Writeups
 
 Also, checkout these awesome writeups by the participants of TISC 2021:
 
