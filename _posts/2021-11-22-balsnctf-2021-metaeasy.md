@@ -13,7 +13,8 @@ tags:
   - metaclasses
 ---
 
-Summary: Provide an image that satisfies an image classifier to obtain the flag.
+Summary: Bypass the restrictions of a Python jail to gain access to a get flag function within an
+impossible-to-instantiate metaclass class.
 
 ```
 metaeasy
