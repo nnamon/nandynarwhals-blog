@@ -618,3 +618,6 @@ $ python exploit.py
 ```
 
 **Flag:** `BALSN{Metaclasses_Are_Deeper_Magic_Than_99%_Of_Users_Should_Ever_Worry_About._If_You_Wonder_Whether_You_Need_Them,_You_Don't.-Tim_Peters_DE8560A2}`
+
+PS: Check out the insane unintended solution using generators by
+[maple3142](https://blog.maple3142.net/2021/11/21/balsn-ctf-2021-writeups/).
