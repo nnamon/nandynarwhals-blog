@@ -12,6 +12,7 @@ tags:
   - web
   - pwn
   - crypto
+  - sticky
 ---
 
 This challenge was created for The InfoSecurity Challenge (TISC) 2021 organised by the Centre for
@@ -21,6 +22,22 @@ completely solved by one person and partially solved by another by the end of th
 All files for this challenge can be found on this [Github
 repository](https://github.com/nnamon/tisc-2021-1865-text-adventure). The files allow one to run the
 challenge locally and includes the challenge service and solutions through Docker.
+
+## Final Results and Other Writeups
+
+*This section was added 28 Nov 2021 after original publication.*
+
+Before we begin talking about the challenge, let's congratulate all of the winners and participants
+for a job well done, especially Eugene Lim (spaceraccoon) and Choo Yi Kai for making it through the
+cash prize challenges! The final results can be found on [CSIT's summary](https://www.csit.gov.sg/tisc/tisc-2021-summary).
+
+Also, check out these awesome writeups by the participants of TISC 2021:
+
+* Eugene Lim (The Champion!): https://spaceraccoon.dev/the-infosecurity-challenge-2021-full-writeup-battle-royale-for-30k
+* Choo Yi Kai (The Runner Up!): https://www.csit.gov.sg/docs/default-source/tisc-2021-write-ups/yk-write-ups.pdf?sfvrsn=ae8f64ee_2
+* Wai Jin Sheng: https://voidst.one/posts/tisc-2021-writeup/
+* Lee Chong Yu: https://github.com/Cy1603/CTFs-and-Server-Hacking-Writeups/blob/master/CSIT%20TISC%20CTF%202021/CSIT%20TISC%20CTF%20Challenge%202021.md
+* Zhang Zeyu: https://ctf.zeyu2001.com/2021/the-infosecurity-challenge-tisc-2021
 
 ## Overview
 
@@ -2719,8 +2736,4 @@ The full exploit can be found in [`4_a_mad_tea_party.py`](https://github.com/nna
 
 Flag: `TISC{W3_y4wN_A_Mor3_r0m4N_w4y}`
 
-## Other Writeups
 
-Also, checkout these awesome writeups by the participants of TISC 2021:
-
-* https://ctf.zeyu2001.com/2021/the-infosecurity-challenge-tisc-2021
