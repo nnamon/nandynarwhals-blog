@@ -13,10 +13,7 @@ tags:
   - java
 ---
 
-Summary: Choosing the value of the prime modulus - 1 as the base in a pseudo Diffie Hellman key
-exchange scheme allows setting a shared value to 1. When this value is used as an exponent for a
-validation value and the construction of an AES key, it allows us to bypass verification and reduce
-the search space of AES decryption key.
+Summary: Exploit log4j vulnerability to leak environment variables.
 
 ## Challenge Prompt
 
