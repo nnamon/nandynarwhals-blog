@@ -13,7 +13,7 @@ tags:
   - small subgroup attack
 ---
 
-Summare: Applying the small subgroup attack in a pseudo Diffie Hellman key exchange scheme that does
+Summary: Applying the small subgroup attack in a pseudo Diffie Hellman key exchange scheme that does
 not give the public A value allows for an attacker to control the potential values of the shared
 secret used to encrypt a flag sent back to the attacker. This makes it feasible to iterate through
 the possible keys to decrypt the flag.
