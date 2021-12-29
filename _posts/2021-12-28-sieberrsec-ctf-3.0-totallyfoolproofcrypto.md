@@ -15,9 +15,7 @@ tags:
   - ecb
 ---
 
-Summary: A dump of a Windows user's AppData containing Google Chrome library data files and Windows
-DPAPI master key files can be used in conjunction with the user's computer password to extract saved
-website login credentials.
+Summary: Standard byte-by-byte ECB oracle decryption.
 
 ## Challenge Prompt
 
